@@ -1,0 +1,140 @@
+* { margin: 0; padding: 0; }
+
+body {
+  font-family: Trebuchet MS, sans-serif;
+  margin-bottom: 20px;
+  margin: 5px 10px;
+  background-color: #56d7d7;
+  color: black;
+}
+
+ul { padding: 10px 0px; }
+
+p { padding: 0.5em 0; }
+
+img { border: 0; }
+
+a { text-decoration: none; color: #19429e; }
+a:visited { color: #d8297f; }
+
+li { list-style: none; }
+
+.clear {
+  clear:both;
+}
+
+#share { position: absolute; right:5px; top: 5px; }
+
+.invadedby {
+  font-weight: bold;
+  font-size: 120%;
+}
+
+.boss {
+  font-weight: bold;
+  font-size: 150%;
+}
+
+#title { text-align: center; }
+
+#content > div {
+  margin-bottom: 20px;
+}
+
+#content > div > div > div {
+  padding: 5px 15px;
+ }
+
+@media (min-width: 1000px) {
+  #content .album .titleblock {
+    float: left;
+    width: 200px;
+  }
+
+  #content .album  .tracks {
+    float: left;
+    width: 720px;
+  }
+
+  #see-also .doll {
+    float: left;
+    width: 200px;
+  }
+
+  #see-also .list {
+    float: left;
+    width: 720px;
+  }
+}
+
+.albumcover {
+  margin-bottom: 5px;
+}
+
+.albumtitle {
+  font-weight: bold;
+}
+
+.note { font-size: 80%; }
+
+.black-blue > div, .black-blue  .title { color: black; }
+.black-dark > div, .black-dark  .title { color: #e0e0e0; }
+.black-blue  .note, .black-blue  .track  { color: #404040; }
+.black-dark  .note, .black-dark  .track  { color: #808080; }
+
+/* Rounded corners - based on DomCorners http://web-graphics.com/mtarchive/001660.php */
+
+.black-blue , .black-dark { background-color: black; }
+
+.black-blue  > div { background-color: #56d7d7; }
+
+.black-dark  > div { background-color: #071010; }
+
+.black-blue > b.btop, .black-blue > b.btop b, .black-blue > b.bbot, .black-blue > b.bbot b,
+.black-dark > b.btop, .black-dark > b.btop b, .black-dark > b.bbot, .black-dark > b.bbot b {
+    background-image:url(rc-blue-black.png);
+}
+
+.black-blue > div > b.btop, .black-blue > div > b.btop b, .black-blue > div > b.bbot, .black-blue > div > b.bbot b {
+    background-image:url(rc-black-blue.png);
+}
+
+.black-dark > div > b.btop, .black-dark > div > b.btop b, .black-dark > div > b.bbot, .black-dark > div > b.bbot b {
+    background-image:url(rc-black-dark.png);
+}
+
+b.btop, b.btop b, b.bbot, b.bbot b {
+    display: block;height: 10px;font-size: 1px;
+    background-repeat: no-repeat
+}
+b.btop b{background-position: 100% -10px}
+b.bbot{background-position: 0 -20px}
+b.bbot b{background-position: 100% -30px} 
+
+.right-border-js > b.btop, .right-border-js > b.bbot,
+.right-border-js > div > b.btop, .right-border-js > div > b.bbot,
+.left-border-js > b.btop b, .left-border-js > b.bbot b,
+.left-border-js > div > b.btop b, .left-border-js > div > b.bbot b { 
+    background-image:none;
+}
+
+.right-border-js > div {
+  margin-right:10px;
+}
+
+.left-border-js > div {
+  margin-left:10px;
+}
+
+.right-border-nojs,
+.left-border-nojs,
+.right-border-nojs > div,
+.left-border-nojs > div {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.right-border-nojs > div { margin-right: 10px; }
+.left-border-nojs > div { margin-left: 10px; }
+
+/* columns code from http://www.positioniseverything.net/articles/onetruelayout */
+
